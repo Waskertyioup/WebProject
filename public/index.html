@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="header-container">
+        <h1 class="logo">Portal Educativo</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Seminarios</a>
+            <a href="#">Galeria</a>
+        </nav>
+    </div>
+</header>
+
+<div id="overlay" class="overlay"></div>
+
+<div class="container">
+
+    <aside class="filters">
+        <button id="closeFiltersBtn" class="close-btn">✕ Cerrar</button>
+        <h2>Filtros</h2>
+
+        <label>Categoría</label>
+        <select id="categorySelect"></select>
+
+        <label>Disciplina</label>
+        <div id="disciplineFilters" class="checkbox-group"></div>
+
+        <hr>
+
+        <label>País</label>
+        <select id="country"></select>
+
+        <label>Región</label>
+        <select id="region"></select>
+
+        <label>Comuna</label>
+        <select id="commune"></select>
+
+        <hr>
+
+        <label>
+            <input type="checkbox" id="kidsCheckbox" checked>
+            Niños
+        </label>
+
+        <label>
+            <input type="checkbox" id="adultsCheckbox" checked>
+            Adultos
+        </label>
+
+        <button id="searchBtn">Buscar</button>
+    </aside>
+
+    <section class="cards-section">
+        <button class="filter-toggle-btn" id="openFilters">
+            Filtros
+        </button>
+        <main id="cards" class="cards-grid"></main>
+    </section>
+
+</div>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div>Colaboradores</div>
+        <p>© 2026 Portal Educativo</p>
+        <div class="footer-links">
+            <a href="#">Contacto: info@mail.portaleducativo.cl</a>
+        </div>
+    </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
